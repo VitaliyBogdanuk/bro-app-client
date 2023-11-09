@@ -13,7 +13,7 @@
             попереду від шахраїв.Тренуйся, проходячи тести, щоб бути готовим до
             будь-якої ситуації.
           </p>
-          <button class="button-big about-button">ТЕСТ</button>
+          <button class="button-big about-button">ПРОЙТИ ТЕСТУВАННЯ</button>
         </div>
       </div>
       <div class="test">
@@ -34,12 +34,12 @@
             Якщо ж тобі здається, що ти вже натрапив на злодюг - гайда
             перевіряти чи то не шахрай.
           </p>
-          <button class="button-big about-button">ПЕРЕВІРИТИ</button>
+          <button class="button-big about-button">ПЕРЕВІРИТИ НОМЕР</button>
         </div>
       </div>
       <div>
         <button class="button-big reviews-button">
-          <p class="reviews-title">Залиште відгук щоб наш Лис став ще кращим</p>
+          <p class="reviews-title">Залиш відгук щоб наш Лис став ще кращим</p>
         </button>
       </div>
     </div>
