@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Home",
+    "path": "/Home",
+    "component": "C:\\\\Users\\\\boec6\\\\OneDrive\\\\Рабочий стол\\\\БРО\\\\quiz-bro\\\\quiz-bro\\\\pages\\\\Home.vue",
+    "chunkName": "pages/Home",
+    "_name": "_96411476"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\boec6\\\\OneDrive\\\\Рабочий стол\\\\БРО\\\\quiz-bro\\\\quiz-bro\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_784b3308"
+  }
+]
