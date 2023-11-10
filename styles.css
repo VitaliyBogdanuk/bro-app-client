@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root {
+  --primary_color: #ffa500;
+  --secondary_color: #66d1ff;
+  --pink-color: #ff8fa2;
+  --accent_color1: #ffd6dd;
+  --accent_color2: #c4d0fb;
+  --accent_color3: #c9f2e9;
+  --accent_color4: #ffc10733;
+
+  --black_color: #333333;
+  --grey_color_1: #49465f;
+  --grey_color_2: #9999a6;
+  --grey_color_3: #cccccc;
+  --grey_color_4: #e6e6e6;
+  --grey_color_5: #efeefc;
+  --white_color: #ffffff;
+  --dark_blue: #001252;
+  --red: #ff0000;
+
+  --text_color: #001252;
+  --font_color: #ffffff;
+  --aditional_color: #4caf50;
+  --accent_color: #ffc107;
+  --button_color: #19b3ea;
+  --button_disabled: #49465f;
+  --input_background: #f1f1f1;
+  --input_border: #9c9fb7;
+  --button_profile: #fca401;
+  --bg_color_profile: rgba(255, 255, 255, 0.95);
+  --button_color_op: rgba(0, 179, 255, 0.95);
+  --button_border: #a3a3af;
+  --orange_color: #ff7922;
+  --img_fon_users: #ccf0ff;
+  --brown_color: rgb(78, 16, 16);
+  --text_colo_w: #ffffff;
+  --category_bg: #cfecf2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary_color);
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-big {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  color: var(--font_color);
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 0.75rem 0.75rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 2.5rem;
+  background-color: var(--button_color);
+}
+.button-big:hover {
+  background-color: var(--button_color);
+}
+
+.button-big:active {
+  color: var(--accent_color);
+}
+
+.button-big:disabled {
+  background-color: var(--button_disabled);
+}
+
+.button-big-orange {
+  background-color: var(--primary_color);
+  border-radius: 15px;
+}
+.button-big-orange:hover {
+  background-color: var(--button_color);
+}
+
+.button-big-orange:active {
+  color: var(--accent_color);
+  background-color: var(--button_color);
+}
+
+.button-big-white {
+  background-color: var(--white_color);
+  border: 1px solid var(--input_border);
+  border-radius: 15px;
+  color: var(--text_color);
+}
+.button-big-white:hover {
+  background-color: var(--button_color);
+}
+
+.button-big-white:active {
+  color: var(--button_color);
+}
+
+.button-big-white:disabled {
+  background-color: var(--button_disabled);
+}
+
+.clicable,
+button,
+a {
+  cursor: pointer;
+}
+
+/* $logo_font: 'Nunito', sans-serif;
+$text_font: 'Poppins', sans-serif; */
+
+/* ::-webkit-scrollbar {
+  width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+} */
+form input {
+  font-size: 16px;
+}
