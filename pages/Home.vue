@@ -2,7 +2,7 @@
   <MainLayout :nav="true">
     <div class="home-wraper">
       <div>
-        <p class="title">Привіт</p>
+        <h1 class="title">Привіт</h1>
         <p class="title-name">Ірина</p>
       </div>
       <div class="test">
