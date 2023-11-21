@@ -17,7 +17,7 @@
   </div>
 </template>
 <script>
-// import axios from '@nuxtjs/axios'
+
 import CategoryOption from '~/components/CategoryOption.vue'
 import MainLayout from '~/layouts/MainLayout.vue'
 

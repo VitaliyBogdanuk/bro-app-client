@@ -21,7 +21,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .categ-wraper {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,6 @@ export default {
 }
 .button-big {
   background-color: transparent;
-  color: var();
   width: 100%;
   padding: 0;
   font-size: 14px;

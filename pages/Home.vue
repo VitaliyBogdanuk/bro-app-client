@@ -13,7 +13,8 @@
             попереду від шахраїв.Тренуйся, проходячи тести, щоб бути готовим до
             будь-якої ситуації.
           </p>
-          <button class="button-big about-button">ПРОЙТИ ТЕСТУВАННЯ</button>
+          <nuxt-link to="/categories"><button class="button-big about-button">ПРОЙТИ ТЕСТУВАННЯ</button></nuxt-link>
+          
         </div>
       </div>
       <div class="test">
