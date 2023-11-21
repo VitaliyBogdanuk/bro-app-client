@@ -1,13 +1,18 @@
 <template>
   <div class="nav-bar">
-    <button class="back-button"></button>
+    <button class="back-button" @click="goBack()"></button>
     <button class="menu-button"></button>
-    <button class="home-button"></button>
+    <nuxt-link to="/Home"><button class="home-button"></button></nuxt-link>
   </div>
 </template>
 <script>
 export default {
   name: 'NavBar',
+  methods: {
+    goBack(){
+      this.$router.back();
+    }
+  }
 }
 </script>
 <style>
