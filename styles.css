@@ -34,7 +34,6 @@
   --orange_color: #ff7922;
   --img_fon_users: #ccf0ff;
   --brown_color: rgb(78, 16, 16);
-  --text_colo_w: #ffffff;
   --category_bg: #cfecf2;
 }
 
@@ -49,6 +48,14 @@ body {
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+}
+h1{
+color:var( --white_color);
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
 }
 
 .button-big {
