@@ -1,20 +1,38 @@
 <template>
   <div class="nav-bar">
-    <button class="back-button" @click="goBack()"></button>
-    <button class="menu-button"></button>
-    <nuxt-link to="/Home"><button class="home-button"></button></nuxt-link>
+    <button class="back-button fade-in" @click="goBack()"></button>
+    <button class="menu-button fade-in" @click="openModal"></button>
+    <nuxt-link to="/Home"><button class="home-button fade-in"></button></nuxt-link>
+    <ModalMenu v-if="isModalOpen" @close="closeModal" />
   </div>
 </template>
 <script>
+import ModalMenu from '~/components/ModalMenu.vue';
+
 export default {
   name: 'NavBar',
+  components: {
+    ModalMenu
+  },
+  data() {
+    return {
+      isModalOpen: false
+    };
+  },
   methods: {
-    goBack(){
+    goBack() {
       this.$router.back();
+    },
+    openModal() {
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
     }
   }
 }
 </script>
+
 <style>
 .nav-bar {
   background-color: var(--white_color);
@@ -47,5 +65,19 @@ export default {
   height: 50px;
   background-size: cover;
   border: none;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
