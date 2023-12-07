@@ -1,13 +1,14 @@
 <template>
   <div>
     <MainLayout :nav="true">
-      <div>
+      <div class="wraper-categories">
         <h1>ОБЕРІТЬ КАТЕГОРІЮ</h1>
         <div class="category-wraper">
           <div
             v-for="(categoryEvery, i) in categories"
             :key="i"
             class="category-single"
+            @click="goSingleCategory(categoryEvery.id)"
           >
             <CategoryOption :category="categoryEvery" />
           </div>
@@ -44,10 +45,17 @@ export default {
         console.log(error)
       })
   },
-  methods: {},
+  methods: {
+    goSingleCategory(categoryId){
+        this.$router.push(`/categories/${categoryId}`);
+    }
+  },
 }
 </script>
 <style>
+.wraper-categories{
+    height: calc(100vh - 90px);
+}
 .category-wraper {
   display: flex;
   flex-direction: row;
