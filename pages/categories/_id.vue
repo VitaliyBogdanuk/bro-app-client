@@ -1,40 +1,42 @@
 <template id="single_category">
-     <MainLayout :nav="true">
-  <div v-if="categoryInfo" class="wraper_singleCategory">
-    <h1>{{ categoryInfo.title }}</h1>
-    <div class="description">
-      <h2>Готовий до пригод?</h2>
-      <div class="about">
-        <p>Тоді швидше обирай тему!</p>
-        <img
-          src="../../src/assets/singlePageCategory/Fox4.png"
-          alt="fox_guard"
-        />
+  <MainLayout :nav="true">
+    <div v-if="categoryInfo" class="wraper_singleCategory">
+      <h1>{{ categoryInfo.title }}</h1>
+      <div class="description">
+        <h2>Готовий до пригод?</h2>
+        <div class="about">
+          <p>Тоді швидше обирай тему!</p>
+          <img
+            src="../../src/assets/singlePageCategory/Fox4.png"
+            alt="fox_guard"
+          />
+        </div>
+      </div>
+      <img
+        class="arrowDown"
+        src="../../src/assets/singlePageCategory/ArrowDown.svg"
+        alt="arrow"
+      />
+
+      <div
+        v-for="(topic, index) in categoryInfo.topics"
+        :key="index"
+        class="button-big"
+      >
+        <nuxt-link :to="{ name: 'singleTopics', params: { id: topic.id , category: categoryInfo.title} }">
+          <div class="button_text_color">
+            <p>{{ topic.title }}</p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
-    <img
-      class="arrowDown"
-      src="../../src/assets/singlePageCategory/ArrowDown.svg"
-      alt="arrow"
-    />
-    <div
-      v-for="(topic, index) in categoryInfo.topics"
-      :key="index"
-      class="topics_button"
-    >
-      <div>
-        {{ topic.title }}
-      </div>
-    </div>
-  </div>
   </MainLayout>
 </template>
 <script>
-
 import MainLayout from '~/layouts/MainLayout.vue'
 
 export default {
-    name: 'Home',
+  name: 'Home',
   components: {
     MainLayout,
   },
@@ -51,7 +53,6 @@ export default {
       })
       .then((response) => {
         this.categoryInfo = response.data
-        console.log(this.categoryInfo.topics)
       })
       .catch((error) => {
         console.log(error)
@@ -61,13 +62,12 @@ export default {
 </script>
 
 <style>
-
 .wraper_singleCategory {
   margin: 0 auto;
   max-width: 375px;
   text-align: center;
   height: calc(100vh - 90px);
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 .wraper_singleCategory h1 {
   margin-bottom: 22px;
@@ -99,7 +99,19 @@ export default {
 .wraper_singleCategory .arrowDown {
   margin-bottom: 40px;
 }
-.topics_button {
+.button-big{
   margin: 20px auto;
+  display: block;
+  width: 300px;
+  height: 50px;
 }
+.button_text_color{
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var( --font_color);
+  font-size: 16px;
+}
+
 </style>
