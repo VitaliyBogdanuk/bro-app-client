@@ -8,7 +8,7 @@
 import MainLayout from '~/layouts/MainLayout.vue'
 export default {
   name: 'IndexPage',
-  comments:{
+  components:{
     MainLayout,
   }
 }
